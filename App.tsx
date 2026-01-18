@@ -2,7 +2,7 @@
 
 import React from 'react';
 // Importa tu componente de pantalla. La ruta es relativa a App.tsx.
-import WelcomeScreen from './screens/PrimeraPantalla'; 
+import WelcomeScreen from './app/(tabs)/PrimeraPantalla'; 
 
 export default function App() {
   return (

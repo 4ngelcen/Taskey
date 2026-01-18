@@ -1,14 +1,14 @@
 import React from 'react';
 import {useRouter} from 'expo-router';
 import { View, Text, Image, TouchableOpacity, StyleSheet, Dimensions } from 'react-native';
-import { Colors, Fonts } from '../styles/globalStyles';
-import BackgroundDecorations from '../components/BackgroundDecorations';
+import { Colors, Fonts } from '../../styles/globalStyles';
+import BackgroundDecorations from '../../components/BackgroundDecorations';
 
 
 const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
 
 
-export default function WelcomeScreen() {
+export default function PrimeraPantalla() {
   const router = useRouter();
   const handleContinue = () => {
     router.push('/quienEres');
@@ -19,10 +19,9 @@ export default function WelcomeScreen() {
       <BackgroundDecorations />
 
       {/* Encabezado */}
-       <Image
-            source = {require("../assets/images/TASK KEY.png")}
-            style = {styles.headerimage}
-            resizeMode="contain"
+      <Image source={require("../../assets/images/TASK_KEY.png")}
+        style={styles.headerimage}
+        resizeMode="contain"
       />
 
       
@@ -30,7 +29,7 @@ export default function WelcomeScreen() {
       {/* Capillave */}
       <View style={styles.imageContainer}>
         <Image
-          source={require('../assets/images/capillave.png')} 
+          source={require('../../assets/images/capillave.png')} 
           style={styles.capillaveImage}
           resizeMode="contain"
         />
@@ -39,7 +38,7 @@ export default function WelcomeScreen() {
       {/* Capibara */}
       <View style={styles.imageContainer}>
         <Image
-          source={require('../assets/images/capibara.png')} 
+          source={require('../../assets/images/capibara.png')} 
           style={styles.capibaraImage}
           resizeMode="contain"
         />

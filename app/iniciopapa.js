@@ -23,7 +23,7 @@ export default function iniciopapa(){
             <Text style = {styles.header}>¡Te damos la bienvenida!</Text>
 
             <Image 
-            source = {require("../assets/images/TASK KEY.png")}
+            source = {require("../assets/images/TASK_KEY.png")}
             style = {styles.headerimage}
             resizeMode="contain"
             />                        

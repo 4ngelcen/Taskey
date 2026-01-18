@@ -27,7 +27,7 @@ export default function QuienEres() {
             </Text>
 
             <Image
-            source = {require("../assets/images/TASK KEY.png")}
+            source = {require("../assets/images/TASK_KEY.png")}
             style = {styles.headerimage}
             resizeMode="contain"
             />
